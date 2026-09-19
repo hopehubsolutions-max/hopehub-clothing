@@ -1,0 +1,115 @@
+{
+  "items": [
+    {
+      "id": "classic",
+      "cat": "Tees",
+      "name": "Classic Edition",
+      "fabric": "Heavy circular-knit, 100% cotton",
+      "price": 399.95,
+      "image": "img/classic-map.jpg",
+      "colorImages": [],
+      "colors": [
+        { "n": "White", "h": "#ece6da" },
+        { "n": "Black", "h": "#161616" },
+        { "n": "Brown", "h": "#5b4433" },
+        { "n": "Cream White", "h": "#e8ddc3" }
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "tagline": "The mark, on its own.",
+      "story": "Named for the mark that carries our name — worn plain, so the rest of the story stays yours to tell. The wordmark-only cut is also available; ask us on WhatsApp.",
+      "badge": ""
+    },
+    {
+      "id": "signature",
+      "cat": "Tees",
+      "name": "Signature Edition",
+      "fabric": "Heavy circular-knit, 100% cotton",
+      "price": 449.95,
+      "image": "img/signature.jpg",
+      "colorImages": [],
+      "colors": [
+        { "n": "White", "h": "#ece6da" },
+        { "n": "Black", "h": "#161616" },
+        { "n": "Brown", "h": "#5b4433" },
+        { "n": "Cream White", "h": "#e8ddc3" }
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "tagline": "The full signature.",
+      "story": "Our mountains and our name, stitched together the way the two have always been. This is Hope Hub said in full.",
+      "badge": ""
+    },
+    {
+      "id": "standard",
+      "cat": "Tees",
+      "name": "Standard Tee",
+      "fabric": "Everyday cotton · Classic print only",
+      "price": 299.00,
+      "image": "img/map-edition.jpg",
+      "colorImages": [],
+      "colors": [
+        { "n": "White", "h": "#ece6da" },
+        { "n": "Black", "h": "#161616" }
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "tagline": "Everyday cotton, the classic mark.",
+      "story": "Hope Hub for the days that don’t ask permission — lighter fabric, same mark, same mountain behind it.",
+      "badge": ""
+    },
+    {
+      "id": "coreluxe",
+      "cat": "Core Luxe",
+      "name": "Motoaitoai",
+      "fabric": "Core Luxe · Heavy circular-knit cotton",
+      "price": 544.95,
+      "image": "img/motoaitoai-black.jpg",
+      "colorImages": [
+        { "color": "Black", "image": "img/motoaitoai-black.jpg" },
+        { "color": "White", "image": "img/motoaitoai-white.jpg" }
+      ],
+      "colors": [
+        { "n": "Black", "h": "#161616" },
+        { "n": "White", "h": "#ece6da" }
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "tagline": "A quiet portrait, worn heavy.",
+      "story": "Motoaitoai — the boy who stood at the edge of the village and dreamed past it. Hand-finished, printed heavy, signed with the small gold HH at the hip.",
+      "badge": "Core Luxe"
+    },
+    {
+      "id": "sehalo",
+      "cat": "Core Luxe",
+      "name": "Motoaitoai Sehalo",
+      "fabric": "Core Luxe · Woven side panel",
+      "price": 640.00,
+      "image": "img/motoaitoai-black.jpg",
+      "colorImages": [],
+      "colors": [
+        { "n": "Brown", "h": "#5b4433" },
+        { "n": "Black", "h": "#161616" },
+        { "n": "White", "h": "#ece6da" }
+      ],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "tagline": "Same story, cut for the sun.",
+      "story": "Sehalo carries the same Motoaitoai portrait, joined to its own woven side panel. Product photography for this cut is landing soon — the design shown here is representative.",
+      "badge": "New · Imagery Coming"
+    },
+    {
+      "id": "cap",
+      "cat": "Caps",
+      "name": "Hand-Painted Cap",
+      "fabric": "Hand-painted, one of one",
+      "price": 290.00,
+      "image": "img/signature.jpg",
+      "colorImages": [],
+      "colors": [
+        { "n": "White", "h": "#ece6da" },
+        { "n": "Green", "h": "#3f5b46" },
+        { "n": "Blue", "h": "#2b3a5e" }
+      ],
+      "sizes": ["One Size"],
+      "tagline": "Painted, not printed.",
+      "story": "No two are the same, because neither are we. Limited run, hand-painted per piece — new colourways drop as they’re finished.",
+      "badge": "Limited · One of One"
+    }
+  ]
+}

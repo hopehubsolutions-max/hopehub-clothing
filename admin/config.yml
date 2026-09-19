@@ -1,0 +1,80 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# After Netlify Identity + Git Gateway are enabled (see README.md), every save
+# made here is committed straight to this GitHub repo, and Netlify redeploys
+# the live site automatically.
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    files:
+      - file: "data/products.json"
+        label: "Product Catalog"
+        name: "catalog"
+        fields:
+          - label: "Products"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — M{{fields.price}}"
+            fields:
+              - { label: "ID (no spaces, unique)", name: "id", widget: "string" }
+              - label: "Category"
+                name: "cat"
+                widget: "select"
+                options: ["Tees", "Core Luxe", "Caps"]
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Fabric / subtitle", name: "fabric", widget: "string" }
+              - { label: "Price (Maloti)", name: "price", widget: "number", value_type: "float" }
+              - { label: "Main image", name: "image", widget: "image" }
+              - label: "Alternate images by colour (optional)"
+                name: "colorImages"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Colour name (must match a colour below exactly)", name: "color", widget: "string" }
+                  - { label: "Image for this colour", name: "image", widget: "image" }
+              - label: "Colours"
+                name: "colors"
+                widget: "list"
+                fields:
+                  - { label: "Colour name", name: "n", widget: "string" }
+                  - { label: "Swatch colour", name: "h", widget: "color" }
+              - label: "Sizes"
+                name: "sizes"
+                widget: "list"
+              - { label: "Card tagline (short)", name: "tagline", widget: "string" }
+              - { label: "Story (poetic description, shown when 'The story' is tapped)", name: "story", widget: "text" }
+              - { label: "Badge (optional, e.g. 'Limited')", name: "badge", widget: "string", required: false }
+
+  - name: "content"
+    label: "Site Text & Contact Details"
+    files:
+      - file: "data/content.json"
+        label: "Site Content"
+        name: "content"
+        fields:
+          - { label: "Hero eyebrow line", name: "hero_eyebrow", widget: "string" }
+          - { label: "Hero Sesotho line", name: "hero_sesotho", widget: "string" }
+          - { label: "Hero subtitle", name: "hero_sub", widget: "text" }
+          - { label: "Story paragraph 1", name: "story_paragraph_1", widget: "text" }
+          - { label: "Story paragraph 2", name: "story_paragraph_2", widget: "text" }
+          - { label: "WhatsApp — Orders (digits only, e.g. 26663437022)", name: "whatsapp_orders", widget: "string" }
+          - { label: "WhatsApp — Orders (display format)", name: "whatsapp_orders_display", widget: "string" }
+          - { label: "WhatsApp — Manager (digits only)", name: "whatsapp_manager", widget: "string" }
+          - { label: "WhatsApp — Manager (display format)", name: "whatsapp_manager_display", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Delivery & exchange policy", name: "delivery_policy", widget: "text" }
+          - { label: "M-Pesa number (display)", name: "payment_mpesa_number", widget: "string" }
+          - { label: "M-Pesa number (digits only)", name: "payment_mpesa_number_raw", widget: "string" }
+          - { label: "M-Pesa account name", name: "payment_mpesa_name", widget: "string" }
+          - { label: "EcoCash number (display)", name: "payment_ecocash_number", widget: "string" }
+          - { label: "EcoCash number (digits only)", name: "payment_ecocash_number_raw", widget: "string" }
+          - { label: "Bank name", name: "payment_bank_name", widget: "string" }
+          - { label: "Bank account number", name: "payment_bank_account", widget: "string" }
+          - { label: "Bank account name", name: "payment_bank_account_name", widget: "string" }
+          - { label: "Bank branch", name: "payment_bank_branch", widget: "string" }
