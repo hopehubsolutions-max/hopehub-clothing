@@ -78,3 +78,10 @@ collections:
           - { label: "Bank account number", name: "payment_bank_account", widget: "string" }
           - { label: "Bank account name", name: "payment_bank_account_name", widget: "string" }
           - { label: "Bank branch", name: "payment_bank_branch", widget: "string" }
+          - label: "Lookbook photos"
+            name: "lookbook"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
