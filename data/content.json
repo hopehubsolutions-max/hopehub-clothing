@@ -1,28 +1,48 @@
 {
+  "whatsapp_manager": "26668671891",
+  "payment_bank_account": "9080008256590",
+  "whatsapp_manager_display": "+266 6867 1891",
   "hero_eyebrow": "Born in the Maloti Highlands, Lesotho",
+  "payment_ecocash_number_raw": "26663301566",
+  "payment_bank_account_name": "Tsepo Mantutle",
+  "lookbook": [
+    {
+      "image": "img/lookbook-3.jpg",
+      "caption": "Motoaitoai, out in the open"
+    },
+    {
+      "image": "/img/uploads/cczm0119-1-.jpg",
+      "caption": "Sehalo"
+    },
+    {
+      "image": "/img/uploads/bhdq8744-1-.jpg",
+      "caption": "Within"
+    },
+    {
+      "image": "img/story-social.jpg",
+      "caption": "One of us, wherever you are"
+    },
+    {
+      "image": "img/lookbook-2.jpg",
+      "caption": "Golden hour, on the hills"
+    },
+    {
+      "image": "img/lookbook-1.jpg",
+      "caption": "Worn in the highlands"
+    }
+  ],
   "hero_sesotho": "Setso le botle ba rona",
-  "hero_sub": "Luxury streetwear cut for the mountain kingdom — heavy cotton, hand-finished pieces, made in small runs for those who carry it forward.",
+  "payment_bank_branch": "Pioneer",
+  "payment_mpesa_number": "+266 5703 8946",
+  "whatsapp_orders": "26663437022",
+  "payment_mpesa_name": "Tsepo Mantutle",
+  "payment_bank_name": "Standard Bank",
+  "whatsapp_orders_display": "+266 6343 7022",
   "story_paragraph_1": "Hope Hub started as one name, said differently. <em>Tsepo</em> — Hope — before it was ever English, before it was ever a brand: a mountain kingdom, a single set of hands, a mission carried alone for long enough that it no longer needed to be.",
   "story_paragraph_2": "Every mark we print — the map, the boy at Motoaitoai, the signature stitched below it — is a piece of that mountain sent out into the world, worn by whoever's ready to carry it.",
-  "whatsapp_orders": "26663437022",
-  "whatsapp_orders_display": "+266 6343 7022",
-  "whatsapp_manager": "26668671891",
-  "whatsapp_manager_display": "+266 6867 1891",
-  "email": "hopehubsolutions@gmail.com",
-  "delivery_policy": "Delivery: around town every Saturday via Maseru Jays. Collection: pick up any weekday at Foso Hardware, Ha Foso. Fit & exchanges: not quite right? Say so at the meetup or delivery and we'll sort a size swap on the spot.",
-  "payment_mpesa_number": "+266 5703 8946",
   "payment_mpesa_number_raw": "26657038946",
-  "payment_mpesa_name": "Tsepo Mantutle",
+  "hero_sub": "Luxury streetwear cut for the mountain kingdom — heavy cotton, hand-finished pieces, made in small runs for those who carry it forward.",
+  "email": "hopehubsolutions@gmail.com",
   "payment_ecocash_number": "+266 6330 1566",
-  "payment_ecocash_number_raw": "26663301566",
-  "payment_bank_name": "Standard Bank",
-  "payment_bank_account": "9080008256590",
-  "payment_bank_account_name": "Tsepo Mantutle",
-  "payment_bank_branch": "Pioneer",
-  "lookbook": [
-    { "image": "img/lookbook-1.jpg", "caption": "Worn in the highlands" },
-    { "image": "img/lookbook-2.jpg", "caption": "Golden hour, on the hills" },
-    { "image": "img/lookbook-3.jpg", "caption": "Motoaitoai, out in the open" },
-    { "image": "img/story-social.jpg", "caption": "One of us, wherever you are" }
-  ]
+  "delivery_policy": "Delivery: around town every Saturday via Maseru Jays. Collection: pick up any weekday at Foso Hardware, Ha Foso. Fit & exchanges: not quite right? Say so at the meetup or delivery and we'll sort a size swap on the spot."
 }
