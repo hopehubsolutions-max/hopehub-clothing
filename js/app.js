@@ -391,17 +391,13 @@
 
   /* ---------------- LOOKBOOK ---------------- */
   function renderLookbook() {
-    var LOOKBOOK = [
-      { img: "img/lookbook-1.jpg", cap: "Worn in the highlands" },
-      { img: "img/lookbook-2.jpg", cap: "Golden hour, on the hills" },
-      { img: "img/lookbook-3.jpg", cap: "Motoaitoai, out in the open" },
-      { img: "img/story-social.jpg", cap: "One of us, wherever you are" }
-    ];
+    var LOOKBOOK = CONTENT.lookbook || [];
     var rail = document.getElementById("lookbookRail");
+    rail.innerHTML = "";
     LOOKBOOK.forEach(function (l) {
       var el = document.createElement("div");
       el.className = "look-item reveal in";
-      el.innerHTML = '<img src="' + l.img + '" alt="' + l.cap + '"><div class="look-cap">' + l.cap + "</div>";
+      el.innerHTML = '<img src="' + l.image + '" alt="' + l.caption + '" loading="lazy"><div class="look-cap">' + l.caption + "</div>";
       rail.appendChild(el);
     });
   }
