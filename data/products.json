@@ -54,12 +54,12 @@
       "tagline": "The full signature.",
       "colors": [
         {
-          "n": "Black",
-          "h": "#161616"
-        },
-        {
           "n": "White",
           "h": "#ece6da"
+        },
+        {
+          "n": "Black",
+          "h": "#161616"
         },
         {
           "n": "Brown",
