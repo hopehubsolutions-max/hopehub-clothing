@@ -147,7 +147,7 @@
       "story": "Motoaitoai the boy who stood at the edge of the village and dreamed past it. Hand-finished, printed heavy, signed with the small gold HH at the hip.",
       "cat": "Core Luxe",
       "id": "coreluxe",
-      "image": "img/motoaitoai-black.jpg",
+      "image": "/img/uploads/b-m.png",
       "colorImages": [
         {
           "color": "White",
@@ -155,7 +155,7 @@
         },
         {
           "color": "Black",
-          "image": "img/motoaitoai-black.jpg"
+          "image": "/img/uploads/b-m.png"
         }
       ]
     },
@@ -209,16 +209,16 @@
       "tagline": "Painted, not printed.",
       "colors": [
         {
-          "n": "White",
-          "h": "#ece6da"
+          "n": "Blue",
+          "h": "#2b3a5e"
+        },
+        {
+          "n": "Grey",
+          "h": "#cdcdc9"
         },
         {
           "n": "Green",
           "h": "#3f5b46"
-        },
-        {
-          "n": "Blue",
-          "h": "#2b3a5e"
         }
       ],
       "sizes": [
@@ -228,7 +228,16 @@
       "cat": "Caps",
       "id": "cap",
       "image": "img/signature.jpg",
-      "colorImages": []
+      "colorImages": [
+        {
+          "color": "Grey",
+          "image": "/img/uploads/grey.png"
+        },
+        {
+          "color": "Blue",
+          "image": "/img/uploads/blue.png"
+        }
+      ]
     }
   ]
 }
