@@ -31,7 +31,7 @@
         "L",
         "XL"
       ],
-      "story": "Named for the mark that carries our name — worn plain, so the rest of the story stays yours to tell. The wordmark-only cut is also available; ask us on WhatsApp.",
+      "story": "Named for the mark that carries our name \"Basotho\" worn plain, so the rest of the story stays yours to tell. The wordmark-only cut is also available; ask us on WhatsApp.",
       "cat": "Tees",
       "id": "classic",
       "image": "/img/uploads/b-classic-edition.png",
@@ -54,12 +54,12 @@
       "tagline": "The full signature.",
       "colors": [
         {
-          "n": "White",
-          "h": "#ece6da"
-        },
-        {
           "n": "Black",
           "h": "#161616"
+        },
+        {
+          "n": "White",
+          "h": "#ece6da"
         },
         {
           "n": "Brown",
@@ -83,12 +83,12 @@
       "image": "/img/uploads/b-signature-edition.png",
       "colorImages": [
         {
-          "color": "Black",
-          "image": "/img/uploads/b-signature-edition.png"
-        },
-        {
           "color": "White",
           "image": "/img/uploads/w-signature-edition.png"
+        },
+        {
+          "color": "Black",
+          "image": "/img/uploads/b-signature-edition.png"
         }
       ]
     },
@@ -115,7 +115,7 @@
         "L",
         "XL"
       ],
-      "story": "Hope Hub for the days that don’t ask permission — lighter fabric, same mark, same mountain behind it.",
+      "story": "HopeHub for the days that don’t ask permission lighter fabric, same mark.",
       "cat": "Tees",
       "id": "standard",
       "image": "img/map-edition.jpg",
@@ -129,12 +129,12 @@
       "tagline": "A quiet portrait, worn heavy.",
       "colors": [
         {
-          "n": "Black",
-          "h": "#161616"
-        },
-        {
           "n": "White",
           "h": "#ece6da"
+        },
+        {
+          "n": "Black",
+          "h": "#161616"
         }
       ],
       "sizes": [
@@ -144,18 +144,18 @@
         "L",
         "XL"
       ],
-      "story": "Motoaitoai — the boy who stood at the edge of the village and dreamed past it. Hand-finished, printed heavy, signed with the small gold HH at the hip.",
+      "story": "Motoaitoai the boy who stood at the edge of the village and dreamed past it. Hand-finished, printed heavy, signed with the small gold HH at the hip.",
       "cat": "Core Luxe",
       "id": "coreluxe",
       "image": "img/motoaitoai-black.jpg",
       "colorImages": [
         {
-          "color": "Black",
-          "image": "img/motoaitoai-black.jpg"
-        },
-        {
           "color": "White",
           "image": "img/motoaitoai-white.jpg"
+        },
+        {
+          "color": "Black",
+          "image": "img/motoaitoai-black.jpg"
         }
       ]
     },
@@ -224,7 +224,7 @@
       "sizes": [
         "One Size"
       ],
-      "story": "No two are the same, because neither are we. Limited run, hand-painted per piece — new colourways drop as they’re finished.",
+      "story": "No two are the same, because neither are we. Limited run, hand-painted per piece.",
       "cat": "Caps",
       "id": "cap",
       "image": "img/signature.jpg",
