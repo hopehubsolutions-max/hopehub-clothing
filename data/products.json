@@ -54,12 +54,12 @@
       "tagline": "The full signature.",
       "colors": [
         {
-          "n": "White",
-          "h": "#ece6da"
-        },
-        {
           "n": "Black",
           "h": "#161616"
+        },
+        {
+          "n": "White",
+          "h": "#ece6da"
         },
         {
           "n": "Brown",
@@ -83,12 +83,12 @@
       "image": "/img/uploads/b-signature-edition.png",
       "colorImages": [
         {
-          "color": "White",
-          "image": "/img/uploads/w-signature-edition.png"
-        },
-        {
           "color": "Black",
           "image": "/img/uploads/b-signature-edition.png"
+        },
+        {
+          "color": "White",
+          "image": "/img/uploads/w-signature-edition.png"
         }
       ]
     },
