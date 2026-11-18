@@ -186,23 +186,28 @@ function resize() {
   group.position.x = w > 760 ? 1.15 : 0; group.position.y = w > 760 ? -0.15 : 0.66; group.scale.setScalar(w > 760 ? 1 : 0.55);
 }
 addEventListener("resize", resize);
-let rotY = 0, vel = 0.004, drag = false, lx = 0, scrollRot = 0, visible = true;
+// Shirt only turns ±50° so the plain back never shows. Drag springs back to front; idle sway is gentle.
+const MAXR = 50 * Math.PI / 180;
+let rotY = 0, vel = 0, drag = false, lx = 0, scrollRot = 0, visible = true, shown = 0;
 cv.addEventListener("pointerdown", (e) => { drag = true; lx = e.clientX; cv.setPointerCapture(e.pointerId); });
-cv.addEventListener("pointermove", (e) => { if (!drag) return; const dx = e.clientX - lx; lx = e.clientX; vel = dx * 0.006; rotY += vel; });
+cv.addEventListener("pointermove", (e) => { if (!drag) return; const dx = e.clientX - lx; lx = e.clientX; vel = dx * 0.006; rotY = Math.max(-MAXR * 1.3, Math.min(MAXR * 1.3, rotY + vel)); });
 cv.addEventListener("pointerup", () => (drag = false));
 cv.addEventListener("pointercancel", () => (drag = false));
 ScrollTrigger.create({
   trigger: "#show", start: "top bottom", end: "bottom top", scrub: true,
   onToggle: (s) => (visible = s.isActive),
-  onUpdate: (s) => { scrollRot = (s.progress - 0.5) * Math.PI * 1.4; gsap.set("#xpGhost", { xPercent: -50 - (s.progress - 0.5) * 30 }); },
+  onUpdate: (s) => { scrollRot = (s.progress - 0.5) * 1.1; gsap.set("#xpGhost", { xPercent: -50 - (s.progress - 0.5) * 30 }); },
 });
 const clock = new THREE.Clock();
 function tick() {
   requestAnimationFrame(tick);
   if (!visible || !renderer) return;
   const t = clock.getElapsedTime();
-  if (!drag) { rotY += vel; vel *= 0.95; if (Math.abs(vel) < 0.0015) vel = 0.0015 * Math.sign(vel || 1); }
-  group.rotation.y = rotY + scrollRot; group.rotation.x = Math.sin(t * 0.6) * 0.04;
+  if (!drag) { rotY += vel; vel *= 0.9; rotY *= 0.975; }
+  const raw = rotY + scrollRot + Math.sin(t * 0.45) * 0.28;
+  const target = MAXR * Math.tanh(raw / MAXR); // soft limit, never past ~50°
+  shown += (target - shown) * 0.12;
+  group.rotation.y = shown; group.rotation.x = Math.sin(t * 0.6) * 0.04;
   if (geo) {
     const p = geo.attributes.position.array, w = H * aspect;
     for (let i = 0; i < p.length; i += 3) {
@@ -238,7 +243,7 @@ function start() {
     document.querySelectorAll("#xpPicker button").forEach((b, i) => b.classList.toggle("on", i === pi));
     if (renderer) getTex(CUT[p.id][col.n]).then((t) => {
       if (!anim || !front) { build(t); return; }
-      gsap.to(group.scale, { x: 0.001, duration: 0.35, ease: "power2.in", onComplete: () => { build(t); rotY += Math.PI; gsap.to(group.scale, { x: group.scale.y, duration: 0.6, ease: "back.out(1.6)" }); } });
+      gsap.to(group.scale, { x: 0.001, duration: 0.35, ease: "power2.in", onComplete: () => { build(t); gsap.to(group.scale, { x: group.scale.y, duration: 0.6, ease: "back.out(1.6)" }); } });
     });
     if (anim) gsap.fromTo("#xpPanel>*", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.04, duration: 0.55, ease: "power3.out" });
   }
