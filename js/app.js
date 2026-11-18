@@ -42,6 +42,24 @@
     renderCart();
     renderLookbook();
     bindGlobalUI();
+    window.HH = {
+      products: PRODUCTS,
+      content: CONTENT,
+      imageFor: imageFor,
+      money: money,
+      addItem: function (id, color, size, qty) {
+        var p = PRODUCTS.find(function (x) { return x.id === id; });
+        if (!p) return;
+        var s = getSel(id);
+        if (color) s.color = color;
+        if (size) s.size = size;
+        s.qty = qty || 1;
+        addToCart(p);
+        renderGrid();
+      },
+      openCart: function () { document.getElementById("cartBtn").click(); }
+    };
+    document.dispatchEvent(new CustomEvent("hh:ready"));
   }
 
   /* ---------------- CONTENT (editable copy) ---------------- */
@@ -257,6 +275,9 @@
     saveCart();
     renderCart();
     showToast(p.name + " added to cart");
+    document.dispatchEvent(new CustomEvent("hh:added", { detail: { id: p.id } }));
+    var badge = document.getElementById("cartCount");
+    badge.classList.remove("bump"); void badge.offsetWidth; badge.classList.add("bump");
   }
 
   function renderCart() {
